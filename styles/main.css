@@ -8,7 +8,7 @@ body {
   background-color: #1D2123;
   min-height: 100vh;
   overflow-x: hidden;
-  font-family: "Quicksand";
+  font-family: "Quicksand", tahoma;
   color: #FFFFFF;
   font-size: 1.06rem;
   line-height: 1.25rem;

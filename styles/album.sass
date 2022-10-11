@@ -1,0 +1,39 @@
+@use 'variables'
+.container
+    background-image: linear-gradient(180deg, rgba(29, 33, 35, 0.8) 0%, #1D2123 61.48%), url("/assets/images/image3.png")
+    background-size: 220% auto 
+    background-position: center top 
+#main
+    .music
+        display: flex
+        flex-direction: column
+        row-gap: 1rem
+        .img
+            img
+                width: 100%
+                height: 18rem
+                object-fit: cover
+                border-radius: 1.56rem
+        .desc
+            color: variables.$clr-light
+            display: flex
+            flex-direction: column
+            row-gap: .5rem
+            span:nth-child(1)
+                color: variables.$clr-primary-alt
+        .actions
+            display: flex
+            justify-content: space-between
+            div
+                place-items: center
+                padding: .625rem
+                background-color: rgba(255, 255, 255, 0.07)
+                border-radius: 2rem
+                display: inline-flex
+                column-gap: .625rem
+                span:nth-child(1)
+                    display: inline-flex
+                    place-items: center
+                    height: 1rem
+                    object
+                        height: 100%
