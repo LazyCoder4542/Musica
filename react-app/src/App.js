@@ -8,6 +8,9 @@ import Page404 from "./pages/Page404";
 import Playlist from "./pages/Playlist";
 import Collection from "./pages/Collection";
 
+// IMPORTING COMPONENTS
+import Header from "./components/molecules/Header";
+
 import './App.css';
 class App extends Component {
   state = {}
@@ -15,20 +18,23 @@ class App extends Component {
     return (
       <Router>
         <div className="container">
-          <Routes>
-            <Route exact path="/" element={
-              <Home />
-            } />
-            <Route path="/collection" element={
-              <Collection />
-            }/>
-            <Route path="/playlist" element={
-              <Playlist />
-            }/>
-            <Route path="*" element={
-              <Page404/>
-            }/>
-          </Routes>
+          <Header />
+          <div id="page-wrapper">
+            <Routes>
+              <Route exact path="/" element={
+                <Home />
+              } />
+              <Route path="/collection" element={
+                <Collection />
+              }/>
+              <Route path="/playlist" element={
+                <Playlist />
+              }/>
+              <Route path="*" element={
+                <Page404/>
+              }/>
+            </Routes>
+          </div>
         </div>
       </Router >
     );
