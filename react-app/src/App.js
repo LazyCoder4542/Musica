@@ -9,6 +9,7 @@ import Playlist from "./pages/Playlist";
 import Collection from "./pages/Collection";
 
 // IMPORTING COMPONENTS
+import NavigationBar from "./components/molecules/NavigationBar";
 import Header from "./components/molecules/Header";
 
 import './App.css';
@@ -18,6 +19,7 @@ class App extends Component {
     return (
       <Router>
         <div className="container">
+          <NavigationBar />
           <Header />
           <div id="page-wrapper">
             <Routes>
