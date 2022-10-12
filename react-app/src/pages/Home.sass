@@ -32,6 +32,12 @@ section#intro
             span:nth-child(1)
                 display: block
                 width: 1.69rem
+                svg
+                    fill: white
+                    path
+                        opacity: 1
+                        stroke-width: 1
+                        stroke: #609EAF
     .bg
         position: absolute
         z-index: 0
@@ -106,6 +112,8 @@ section#top-charts
                         border-radius: 50%
                         border: .5px solid rgba(255, 255, 255, 11%)
                         color: variables.$clr-secondary
+                        svg
+                            width: 1.125rem
 section#new-releases, section#popular
     .box
         .list
