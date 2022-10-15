@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import { ReactComponent as LogoIcon} from './../../assets/icons/logo.svg'
 import { ReactComponent as SearchIcon} from './../../assets/icons/search.svg'
@@ -8,7 +9,9 @@ class Header extends Component {
         return (
             <header id="site-header">
                 <div className="logo">
-                    <LogoIcon />
+                    <Link to="/">
+                        <LogoIcon />
+                    </Link>
                 </div>
                 <div className="search">
                     <div className="search-icon">
