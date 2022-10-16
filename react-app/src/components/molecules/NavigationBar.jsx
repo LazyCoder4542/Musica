@@ -28,13 +28,13 @@ class NavigationBar extends Component {
                                 </span>
                             </li>
                         </NavLink>
-                        <NavLink to="/collections">
+                        <NavLink to="/collection">
                             <li>
                                 <span>
                                     <MusicLibraryIcon />
                                 </span>
                                 <span>
-                                    My collections
+                                    My collection
                                 </span>
                             </li>
                         </NavLink>
